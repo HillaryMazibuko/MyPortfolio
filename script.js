@@ -31,24 +31,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-/* ------------------------------
-   CONTACT FORM (SAFE DEMO MODE)
--------------------------------- */
-const contactForm = document.querySelector("form");
-
-if (contactForm) {
-  contactForm.addEventListener("submit", e => {
-    e.preventDefault();
-
-    alert(
-      "Thank you for reaching out!\n\n" +
-      "This form is currently in demo mode.\n" +
-      "It can be connected to EmailJS, Formspree, or Netlify Forms."
-    );
-
-    contactForm.reset();
-  });
-}
 
 /* ------------------------------
    SCROLL REVEAL ANIMATION
@@ -102,5 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
 
 
