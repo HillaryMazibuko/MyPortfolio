@@ -19,6 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* ------------------------------
+   EMAIL CONFIRMATION
+-------------------------------- */
+emailjs.send("service_id", "template_id", formData)
+.then(() => alert("Message sent successfully!"));
+
+
+/* ------------------------------
    SMOOTH SCROLLING (ANCHORS)
 -------------------------------- */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
