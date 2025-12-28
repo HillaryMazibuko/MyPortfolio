@@ -100,4 +100,12 @@ document.addEventListener("DOMContentLoaded", () => {
       link.classList.add("active");
     }
   });
+
 });
+
+emailjs.send("service_id", "template_id", {
+  name: name.value,
+  email: email.value,
+  message: message.value
+})
+.then(() => alert("Message sent successfully!"));
