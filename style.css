@@ -301,14 +301,15 @@ nav a.active {
 }
 
 .profile-img {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   border-radius: 60%;
   margin: 15px auto;
   display: block;
   border: 3px solid #ddd;
 }
+
 
 
 
