@@ -312,20 +312,12 @@ nav a.active {
 }
 
 
-
 .swipe-slider {
   overflow: hidden;
   width: 100%;
   margin-top: 12px;
   border-radius: 8px;
-}
-
-.swipe-slider {
-  overflow: hidden;
-  width: 100%;
-  margin-top: 12px;
-  border-radius: 8px;
-  background: #f4f4f4; /* fills empty space nicely */
+  background: #f4f4f4;
 }
 
 .swipe-track {
@@ -336,26 +328,13 @@ nav a.active {
 
 .swipe-track img {
   width: 100%;
-  height: 450px;          /* fixed height for consistency */
-  object-fit: cover;     /* crop nicely instead of stretching */
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  display: block;
-  background: #f4f4f4;   /* avoids black bars */
+  flex-shrink: 0;
+  height: 220px;
+  object-fit: contain; /* FULL IMAGE VISIBLE */
+  background: #f4f4f4;
   border-radius: 8px;
 }
 
-/* Mobile optimization */
-@media (max-width: 600px) {
-  .swipe-track img {
-    height: 180px;
-  }
-}
-
-
-.swipe-slider {
-  border: 1px solid #ddd;
-}
 
 
 .gallery {
@@ -373,6 +352,7 @@ nav a.active {
   border: 1px solid #ccc;
   display: block;
 }
+
 
 
 
