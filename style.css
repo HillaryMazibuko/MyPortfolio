@@ -338,7 +338,7 @@ nav a.active {
   width: 100%;
   flex-shrink: 0;
   height: 400px;
-  object-fit: contain;   /* 🔥 SHOW FULL IMAGE */
+     /* 🔥 SHOW FULL IMAGE */
   background: #f4f4f4;   /* avoids black bars */
   border-radius: 8px;
 }
@@ -365,6 +365,7 @@ nav a.active {
   border: 1px solid #ccc;
   display: block;
 }
+
 
 
 
