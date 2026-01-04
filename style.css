@@ -313,27 +313,39 @@ nav a.active {
 
 
 .swipe-slider {
-  overflow: hidden;
-  width: 100%;
-  margin-top: 12px;
-  border-radius: 8px;
-  background: #f4f4f4;
-}
-
-.swipe-track {
   display: flex;
-  transition: transform 0.35s ease;
-  touch-action: pan-y;
+  gap: 12px;
+  overflow-x: auto;              /* 🔥 enables swipe */
+  scroll-snap-type: x mandatory; /* 🔥 snap effect */
+  padding-bottom: 8px;
+  margin-top: 12px;
 }
 
-.swipe-track img {
-  width: 100%;
-  flex-shrink: 0;
+.swipe-slider::-webkit-scrollbar {
+  height: 6px;
+}
+
+.swipe-slider::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+.swipe-slider img {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
   height: 500px;
-  object-fit: contain; /* FULL IMAGE VISIBLE */
+  object-fit: contain;           /* FULL IMAGE */
   background: #f4f4f4;
   border-radius: 8px;
 }
+
+/* Mobile */
+@media (max-width: 600px) {
+  .swipe-slider img {
+    height: 180px;
+  }
+}
+
 
 
 
@@ -352,6 +364,7 @@ nav a.active {
   border: 1px solid #ccc;
   display: block;
 }
+
 
 
 
