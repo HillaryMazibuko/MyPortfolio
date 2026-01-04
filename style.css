@@ -194,7 +194,7 @@ nav a.active {
 
 .card {
   background: var(--bg-card);
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   border: 1px solid var(--border-light);
   border-radius: 12px;
   padding: 1.25rem;
@@ -371,6 +371,7 @@ nav a.active {
   border: 1px solid #ccc;
   display: block;
 }
+
 
 
 
