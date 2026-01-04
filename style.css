@@ -329,7 +329,7 @@ nav a.active {
 .swipe-track img {
   width: 100%;
   flex-shrink: 0;
-  height: 450px;
+  height: 500px;
   object-fit: contain; /* FULL IMAGE VISIBLE */
   background: #f4f4f4;
   border-radius: 8px;
@@ -352,6 +352,7 @@ nav a.active {
   border: 1px solid #ccc;
   display: block;
 }
+
 
 
 
