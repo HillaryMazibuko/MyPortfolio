@@ -93,4 +93,43 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+document.querySelectorAll(".swipe-slider").forEach(slider => {
+  const track = slider.querySelector(".swipe-track");
+  const slides = track.querySelectorAll("img");
+
+  let index = 0;
+  let startX = 0;
+  let currentX = 0;
+  let isDragging = false;
+
+  function update() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  track.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+  });
+
+  track.addEventListener("touchmove", e => {
+    if (!isDragging) return;
+    currentX = e.touches[0].clientX;
+  });
+
+  track.addEventListener("touchend", () => {
+    if (!isDragging) return;
+
+    const diff = startX - currentX;
+
+    if (diff > 50 && index < slides.length - 1) {
+      index++;
+    } else if (diff < -50 && index > 0) {
+      index--;
+    }
+
+    update();
+    isDragging = false;
+  });
+});
+
 
