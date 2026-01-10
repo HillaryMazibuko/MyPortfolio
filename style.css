@@ -357,13 +357,14 @@ nav a.active {
 }
 
 .gallery img {
-  width: 100%;
+  width: 300px;
   height: 450px;          /* fixed height for consistency */
   object-fit: cover;     /* crop nicely instead of stretching */
   border-radius: 8px;
   border: 1px solid #ccc;
   display: block;
 }
+
 
 
 
