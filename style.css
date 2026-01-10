@@ -109,7 +109,7 @@ nav a.active {
   border-radius: 14px;
   overflow: hidden;
   background:
-    linear-gradient(to right, rgba(255,255,255,0.85), rgba(255,255,255,0.75)),
+    linear-gradient(to right, rgba(255,255,255,0.80), rgba(255,255,255,0.70)),
     url("https://www.eagleview.com/wp-content/uploads/2025/09/GIS-Mapping-EV-featured-blog.jpg");
   background-size: cover;
   background-position: center;
@@ -364,6 +364,7 @@ nav a.active {
   border: 1px solid #ccc;
   display: block;
 }
+
 
 
 
